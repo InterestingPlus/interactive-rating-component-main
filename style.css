@@ -51,7 +51,7 @@ main .Rating .star {
     place-items: center;
     background: var(--Dark-Blue);
 }
-main .Rating h2 {
+main .Rating h1 {
     margin-top: 32px;
     font-size: 28px;
 }
