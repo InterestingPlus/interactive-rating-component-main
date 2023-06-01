@@ -60,18 +60,20 @@
   var submit = document.getElementById("rat");
   var btns = document.getElementsByName("rate");
   var footer = document.querySelector(".attribution");
-
+  
+  
+var sub = new Audio("submit.mp3");
   submit.addEventListener( "click", () => {
     first.style.display = "none";
     second.style.display = "block";
     footer.style.marginTop = "-10px";
-    function() {
 
-  const sub = new Audio("submit.mp3");
+
+  
 
   sub.play();
 
-  }
+  
   });
   second.addEventListener( "click", () => {
     first.style.display = "block";
