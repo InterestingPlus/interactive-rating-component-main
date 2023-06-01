@@ -1,5 +1,5 @@
 /* responsive design for mobile */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 550px) {
     main{
         width: 325px;
         height: 360px;
