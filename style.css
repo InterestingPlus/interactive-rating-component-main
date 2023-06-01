@@ -122,6 +122,9 @@ main .Thank .gif {
     margin-top: 15px;
     margin-right: 8px;
 }
+main .Thank .gif img{
+    animation: animation 1s alternate;
+}
 main .Thank .confirm {
     margin-top: 10px;
     width: 100%;
@@ -133,15 +136,72 @@ main .Thank .confirm p {
     background: var(--Dark-Blue);
     padding: 5px 15px 1px;
     border-radius: 20px;
+    animation: animation1 0.3s alternate;
 }
 main .Thank h2 {
     margin-top: 33px;
     font-size: 28px;
+    animation: animation2 .5s alternate;
 }
 main .Thank > p {
     margin-top: 10px;
     margin-right: 8px;
     line-height: 1.6;
+    animation: animation3 .5s alternate;
 }
 .attribution a { color: hsl(34, 60%, 52%); }
 .attribution { margin-top: 10px; font-size: 11px; text-align: center; color: var(--Light-Grey); }
+
+@keyframes animation {
+    0%{
+        opacity: 0;
+        transform: rotate(0) scale(2);
+    }
+    100%{
+        transform: rotate(0);
+    }
+    20%{
+        opacity: .5;
+        transform: scale(1) rotate(10deg);
+    }
+    40%{
+        opacity: 1;
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(10deg);
+    }
+    80%{
+        transform: rotate(-10deg);
+    }
+}
+@keyframes animation1 {
+    0%{
+        opacity: 0;
+        font-size: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: 0;
+    }
+}
+@keyframes animation2 {
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: 0;
+    }
+}
+@keyframes animation3 {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: 0;
+    }
+}
